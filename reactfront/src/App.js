@@ -5,6 +5,9 @@ import CompShowBlogs from './blog/ShowBlogs.jsx';
 import CompCreateBlog from './blog/CreateBlog.jsx';
 import CompEditBlog from './blog/EditBlog.jsx';
 import Nav from './components/Nav.jsx';
+import CompRegister from './admin/Register.jsx';
+import CompLogin from './admin/Login';
+// import Footer from './components/Footer.jsx';
 
 
 
@@ -22,11 +25,17 @@ function App() {
             <Routes>
               <Route path='/' element={ <CompShowBlogs/>} />
               <Route path="/create" element={ <CompCreateBlog/> }/>
-              <Route path="/edit/:id" element={ <CompEditBlog/> }/>              
+              <Route path="/edit/:id" element={ <CompEditBlog/> }/>
+              <Route path="/register" element={ <CompRegister/> }/>
+              <Route path="/login" element={ <CompLogin/> }/>              
             </Routes>
         </BrowserRouter>
 
       </div>
+      
+        
+      {/* <Footer/> */}
+      
     </div>
   );
 }
