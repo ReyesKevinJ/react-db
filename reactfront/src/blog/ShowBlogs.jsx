@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useState , useEffect } from 'react'
 import {Link} from 'react-router-dom'
 
-const URI = 'https://react-db-production.up.railway.app/blogs'
+const URI = 'https://react-db-production.up.railway.app/blogs/'
 
 const CompShowBlogs = ()=>{
     const [blogs, setBlog] = useState([])
