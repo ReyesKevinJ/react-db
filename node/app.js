@@ -5,7 +5,6 @@ import blogRoutes from './routes/routes.js'
 import { PORT } from "./config.js";
 const app = express();
 
-app.get('/',console.log("hola mundo"))
 app.use( cors())
 app.use(express.json())
 app.use('/blogs', blogRoutes)
