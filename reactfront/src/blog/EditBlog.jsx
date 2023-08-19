@@ -2,7 +2,7 @@ import axios from 'axios'
 import { useState , useEffect } from 'react'
 import {useNavigate, useParams } from 'react-router-dom'
 
-const URI = 'https://react-db-production.up.railway.app/blogs'
+const URI = 'https://react-db-production.up.railway.app/blogs/'
 
 const CompEditBlog=()=>{
     const [title, setTitle]= useState('')
